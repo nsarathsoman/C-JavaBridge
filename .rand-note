@@ -1,0 +1,3 @@
+g++ -I. -I /opt/homebrew/Cellar/openjdk/20.0.1/include -L /opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home/lib/server -ljvm  -shared -o libjavabridge.dylib JavaBridge.cpp JavaVirtualMachine.cpp
+
+g++ -I. -I /Users/sarath/Softwares/jdk-11.0.15+10/Contents/Home/include -I /Users/sarath/Softwares/jdk-11.0.15+10/Contents/Home/include/darwin -L /Users/sarath/Softwares/jdk-11.0.15+10/Contents/Home/lib/server -ljvm  -shared -o libjavabridge.dylib JavaBridge.cpp JavaVirtualMachine.cpp -arch x86_64
